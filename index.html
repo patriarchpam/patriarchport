@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patriarch | Software Engineer & Developer</title>
+  <meta name="description" content="Patriarch Pam — Software Engineering student & Frontend Developer specializing in web development, React, Flutter and creative software solutions.">
+  <meta property="og:title" content="Patriarch | Software Engineer">
+  <meta property="og:description" content="Portfolio of Patriarch Pam — Software Engineering student at Veritas University, Abuja.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/noto--woman-technologist.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- EmailJS SDK (sends email directly from browser) -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="logo" aria-label="Home">
+        <span class="logo-p">P</span>atriarch<span class="logo-dot">.</span><span class="logo-dev">dev</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links" role="navigation" aria-label="Main navigation">
+        <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#github" class="nav-link" data-section="github">GitHub</a></li>
+        <li><a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/patriarch-pam-63411227a/" target="_blank" rel="noopener noreferrer" class="nav-link nav-link-linkedin" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </li>
+      </ul>
+
+      <a href="Patriarch_Pam_CV.pdf" download="Patriarch_Pam_CV.pdf" class="nav-cta" id="nav-cta">
+        <i class="fa-solid fa-download"></i> Download CV
+      </a>
+
+      <button class="hamburger" id="menu-btn" aria-label="Toggle Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== MOBILE MENU OVERLAY ===== -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+        <div class="hero-grid"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badge reveal-up">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+
+        <h1 class="hero-title reveal-up">
+          Hi, I'm <span class="text-gradient">Pam Patriarch</span>
+        </h1>
+
+        <div class="hero-typing-wrapper reveal-up">
+          <span class="hero-prefix">I build </span>
+          <span class="hero-typed" id="typed-text"></span>
+          <span class="typing-cursor">|</span>
+        </div>
+
+        <p class="hero-desc reveal-up">
+          Software Engineering student at Veritas University, Abuja. Passionate about crafting 
+          <strong>innovative digital experiences</strong> — from sleek web apps to creative design solutions.
+        </p>
+
+        <div class="hero-actions reveal-up">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-rocket"></i> View My Work
+          </a>
+          <a href="Patriarch_Pam_CV.pdf" download="Patriarch_Pam_CV.pdf" class="btn btn-ghost">
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <i class="fa-solid fa-paper-plane"></i> Get in Touch
+          </a>
+        </div>
+
+        <div class="hero-chips reveal-up">
+          <span class="chip"><i class="fa-brands fa-react"></i> React</span>
+          <span class="chip"><i class="fa-brands fa-flutter"></i> Flutter</span>
+          <span class="chip"><i class="fa-solid fa-code"></i> TypeScript</span>
+          <span class="chip"><i class="fa-brands fa-java"></i> Java</span>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span>Scroll down</span>
+        <div class="scroll-arrow">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">Who I Am</span>
+          <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image-col reveal-left">
+            <div class="about-img-wrapper">
+              <img src="images/dito shot.jpg" alt="Patriarch Pam profile photo" class="about-img">
+              <div class="about-img-decoration"></div>
+            </div>
+            <div class="about-stats">
+              <div class="stat-card glass-card">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Years Learning</span>
+              </div>
+              <div class="stat-card glass-card">
+                <span class="stat-number">12+</span>
+                <span class="stat-label">Projects Built</span>
+              </div>
+              <div class="stat-card glass-card">
+                <span class="stat-number">13+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text-col reveal-right">
+            <h3 class="about-greeting">A developer who loves to create 🚀</h3>
+            <p class="about-body">
+              As a software engineering student, I'm driven by a passion for technology and innovation. 
+              I specialize in <strong>web development and software design</strong>, focusing on creating 
+              efficient solutions that make a positive impact. I enjoy tackling complex challenges and 
+              turning ideas into reality.
+            </p>
+
+            <div class="about-cards">
+              <div class="about-info-card glass-card">
+                <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="info-content">
+                  <h4>Education</h4>
+                  <p>Software Engineering Student at <strong>Veritas University, Abuja</strong> — proficient in Java, Python, and C#.</p>
+                </div>
+              </div>
+
+              <div class="about-info-card glass-card">
+                <div class="info-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <div class="info-content">
+                  <h4>Experience</h4>
+                  <p><strong>Frontend Developer @ nHub</strong> (2022–2024) — Built dynamic web apps with React, Tailwind CSS, and Bootstrap.</p>
+                </div>
+              </div>
+
+              <div class="about-info-card glass-card">
+                <div class="info-icon"><i class="fa-solid fa-heart"></i></div>
+                <div class="info-content">
+                  <h4>Personal Interests</h4>
+                  <p>Swimming, cooking, music, reading, coding, and always exploring new technologies.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary about-cta">
+              <i class="fa-solid fa-envelope"></i> Let's Connect
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">What I've Built</span>
+          <h2 class="section-title">My <span class="text-gradient">Projects</span></h2>
+          <p class="section-desc">A collection of work spanning web apps, UI designs, and software projects.</p>
+        </div>
+
+        <div class="filter-bar reveal-up">
+          <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+          <button class="filter-btn filter-btn-featured" data-filter="featured" id="filter-featured">⭐ Featured</button>
+          <button class="filter-btn" data-filter="web" id="filter-web">Web</button>
+          <button class="filter-btn" data-filter="design" id="filter-design">Design</button>
+          <button class="filter-btn" data-filter="software" id="filter-software">Software</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- ⭐ FEATURED: TruckView -->
+          <div class="project-card glass-card reveal-up project-featured" data-category="featured software">
+            <div class="project-featured-badge">⭐ Featured</div>
+            <div class="project-img-wrap">
+              <img src="images/truckview.png" alt="TruckView App" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-preview-btn" onclick="openModal('images/truckview.png', 'TruckView — Roadside Assistance App', 'A mobile app providing professional repair &amp; rescue support for every vehicle type. Features roadside assistance, emergency rescue, tire fix, maintenance tracking, profile management, and a contact system. Tagline: &quot;Your satisfaction is our clarion call.&quot;', ['Flutter', 'Dart', 'Figma', 'Mobile'])">
+                  <i class="fa-solid fa-eye"></i> Preview
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Figma</span><span class="tag">Mobile</span>
+              </div>
+              <h3>TruckView 🚛</h3>
+              <p>Roadside assistance mobile app — professional repair &amp; rescue support for every vehicle type. Includes emergency rescue, tire fix, maintenance, and contact pages.</p>
+              <div class="project-links">
+                <a href="https://github.com/patriarchpam" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+                <a href="https://www.figma.com/design/vJgJ82mnOWYSDYt7q77n7y/TRUCKVIEW_MVP?node-id=88-62&t=Vyls85XTqhh9B3Wc-0" target="_blank" rel="noopener noreferrer" class="project-link-btn project-link-figma">
+                  <i class="fa-brands fa-figma"></i> View Design
+                </a>
+                <span class="project-link-btn project-link-wip">
+                  <i class="fa-solid fa-circle-dot pulse-dot"></i> In Dev
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ⭐ FEATURED: Beginars -->
+          <div class="project-card glass-card reveal-up project-featured" data-category="featured web">
+            <div class="project-featured-badge">⭐ Featured</div>
+            <div class="project-img-wrap">
+              <img src="images/beginars.png" alt="Beginars Clothing Store" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-preview-btn" onclick="openModal('images/beginars.png', 'Beginars — Streetwear Store', 'A full-stack e-commerce platform for a streetwear clothing brand. Bold tagline: &quot;Begin to Wear it Loud.&quot; Features a product shop, collections browser, lookbook, cart, and user accounts. Built with Next.js and Supabase backend.', ['Next.js', 'TypeScript', 'Supabase', 'E-Commerce'])">
+                  <i class="fa-solid fa-eye"></i> Preview
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Supabase</span><span class="tag">E-Commerce</span>
+              </div>
+              <h3>Beginars 👕</h3>
+              <p>A streetwear clothing store — <em>"Begin to Wear it Loud."</em> Full e-commerce with shop, collections, lookbook, cart, and user auth. Currently in active development.</p>
+              <div class="project-links">
+                <a href="https://github.com/patriarchpam" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+                <span class="project-link-btn project-link-wip">
+                  <i class="fa-solid fa-circle-dot pulse-dot"></i> Live Dev
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ⭐ FEATURED: Spacer -->
+          <div class="project-card glass-card reveal-up project-featured" data-category="featured software web">
+            <div class="project-featured-badge">⭐ Featured</div>
+            <div class="project-img-wrap">
+              <img src="images/spacer.png" alt="Spacer Project Management" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-preview-btn" onclick="openModal('images/spacer.png', 'Spacer — Project Management Dashboard', 'A SaaS workspace and project management tool. Features organisation overview, team management (HR, Dev, Marketing), department tracking, task management, calendar, reports, and real-time activity feeds. Think Notion meets Asana.', ['React', 'TypeScript', 'SaaS', 'Dashboard'])">
+                  <i class="fa-solid fa-eye"></i> Preview
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">SaaS</span><span class="tag">Dashboard</span>
+              </div>
+              <h3>Spacer 🚀</h3>
+              <p>A SaaS project management &amp; workspace dashboard. Manage teams, departments, projects, tasks, and meetings — all in one dark-themed interface.</p>
+              <div class="project-links">
+                <a href="https://github.com/patriarchpam" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+                <span class="project-link-btn project-link-wip">
+                  <i class="fa-solid fa-circle-dot pulse-dot"></i> Live Dev
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Banking Landing Page -->
+          <div class="project-card glass-card reveal-up" data-category="web">
+            <div class="project-img-wrap">
+              <img src="images/banking-landing page.png" alt="Banking Landing Page" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-preview-btn" onclick="openModal('images/banking-landing page.png', 'Banking Landing Page', 'A sleek and modern landing page for a banking service.', ['HTML', 'CSS', 'JavaScript'])">
+                  <i class="fa-solid fa-eye"></i> Preview
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+              </div>
+              <h3>Banking Landing Page</h3>
+              <p>A sleek and modern landing page for a banking service.</p>
+              <div class="project-links">
+                <a href="https://github.com/patriarchpam" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="project-link-btn project-link-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div></p>
+            </div>
+          </div>
+
+          <div class="project-card glass-card reveal-up" data-category="web">
+            <div class="project-img-wrap">
+              <img src="images/easy-banking.png" alt="Easy Banking" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-preview-btn" onclick="openModal('images/easy-banking.png', 'Easy Banking Landing Page', 'A simple and user-friendly landing page for an easy banking service.', ['HTML', 'CSS'])">
+                  <i class="fa-solid fa-eye"></i> Preview
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span>
+              </div>
+              <h3>Easy Banking Page</h3>
+              <p>A simple and user-friendly landing page for an easy banking service.</p>
+              <div class="project-links">
+                <a href="https://github.com/patriarchpam" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="project-link-btn project-link-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div></p>
+            </div>
+          </div>
+
+          <div class="project-card glass-card reveal-up" data-category="web">
+            <div class="project-img-wrap">
+              <img src="images/web-3.png" alt="Web 3 Landing Page" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-preview-btn" onclick="openModal('images/web-3.png', 'Web 3 Landing Page', 'A futuristic landing page for a Web 3 platform.', ['HTML', 'CSS', 'JavaScript'])">
+                  <i class="fa-solid fa-eye"></i> Preview
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span>
+              </div>
+              <h3>Web 3 Landing Page</h3>
+              <p>A futuristic landing page for a Web 3 platform.</p>
+              <div class="project-links">
+                <a href="https://github.com/patriarchpam" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="project-link-btn project-link-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div></p>
+            </div>
+          </div>
+
+          <div class="project-card glass-card reveal-up" data-category="web">
+            <div class="project-img-wrap">
+              <img src="images/forklift.png" alt="Forklift Hiring" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-preview-btn" onclick="openModal('images/forklift.png', 'Forklift Hiring', 'A website for forklift hiring services.', ['HTML', 'CSS', 'JS'])">
+                  <i class="fa-solid fa-eye"></i> Preview
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span>
+              </div>
+              <h3>Forklift Hiring</h3>
+              <p>A website for forklift hiring services.</p>
+              <div class="project-links">
+                <a href="https://github.com/patriarchpam" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="project-link-btn project-link-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div></p>
+            </div>
+          </div>
+
+          <div class="project-card glass-card reveal-up" data-category="web">
+            <div class="project-img-wrap">
+              <img src="images/preview-card.png" alt="ETH Site" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-preview-btn" onclick="openModal('images/preview-card.png', 'ETH Site', 'A random ethereum website from Frontend Mentor.', ['HTML', 'CSS'])">
+                  <i class="fa-solid fa-eye"></i> Preview
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span>
+              </div>
+              <h3>ETH Site</h3>
+              <p>A random ethereum website from Frontend Mentor.</p>
+              <div class="project-links">
+                <a href="https://github.com/patriarchpam" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="project-link-btn project-link-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div></p>
+            </div>
+          </div>
+
+          <div class="project-card glass-card reveal-up" data-category="web">
+            <div class="project-img-wrap">
+              <img src="images/card.png" alt="3 Column Preview Card" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-preview-btn" onclick="openModal('images/card.png', '3 Column Preview Card', 'A 3 column preview card component for sedans, SUVs and luxury cars.', ['HTML', 'CSS'])">
+                  <i class="fa-solid fa-eye"></i> Preview
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span>
+              </div>
+              <h3>3 Column Preview Card</h3>
+              <p>A 3-column card component for sedans, SUVs and luxury cars.</p>
+              <div class="project-links">
+                <a href="https://github.com/patriarchpam" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="project-link-btn project-link-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div></p>
+            </div>
+          </div>
+
+          <div class="project-card glass-card reveal-up" data-category="web">
+            <div class="project-img-wrap">
+              <img src="images/testimonials.png" alt="Testimonials Page" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-preview-btn" onclick="openModal('images/testimonials.png', 'Testimonials Page', 'A testimonials website with interactive features.', ['HTML', 'CSS', 'JS'])">
+                  <i class="fa-solid fa-eye"></i> Preview
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span>
+              </div>
+              <h3>Testimonials Page</h3>
+              <p>A testimonials website with interactive features.</p>
+              <div class="project-links">
+                <a href="https://github.com/patriarchpam" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="project-link-btn project-link-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div></p>
+            </div>
+          </div>
+
+          <div class="project-card glass-card reveal-up" data-category="web">
+            <div class="project-img-wrap">
+              <img src="images/css-animation.png" alt="Christmas Animation" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-preview-btn" onclick="openModal('images/css-animation.png', 'Christmas Animation Box', 'A festive animation box created using pure CSS.', ['CSS', 'HTML'])">
+                  <i class="fa-solid fa-eye"></i> Preview
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">CSS</span><span class="tag">Animation</span>
+              </div>
+              <h3>Christmas Animation Box</h3>
+              <p>A festive animation box created using pure CSS.</p>
+              <div class="project-links">
+                <a href="https://github.com/patriarchpam" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="project-link-btn project-link-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div></p>
+            </div>
+          </div>
+
+          <div class="project-card glass-card reveal-up" data-category="design">
+            <div class="project-img-wrap">
+              <img src="images/figma.png" alt="Mechanical Engineering Design" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-preview-btn" onclick="openModal('images/figma.png', 'Mechanical Engineering Website', 'A Figma design for a mechanical engineering website.', ['Figma', 'UI/UX'])">
+                  <i class="fa-solid fa-eye"></i> Preview
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">Figma</span><span class="tag">UI/UX</span>
+              </div>
+              <h3>Mechanical Engineering Site</h3>
+              <p>A Figma design for a mechanical engineering website.</p>
+              <div class="project-links">
+                <a href="https://github.com/patriarchpam" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="project-link-btn project-link-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div></p>
+            </div>
+          </div>
+
+          <div class="project-card glass-card reveal-up" data-category="design">
+            <div class="project-img-wrap">
+              <img src="images/figs.png" alt="Travelling App Design" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-preview-btn" onclick="openModal('images/figs.png', 'Travelling App Design', 'A Figma design of a travelling mobile application.', ['Figma', 'Mobile', 'UI/UX'])">
+                  <i class="fa-solid fa-eye"></i> Preview
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">Figma</span><span class="tag">Mobile</span>
+              </div>
+              <h3>Travelling App Design</h3>
+              <p>A Figma design of a travelling mobile application.</p>
+              <div class="project-links">
+                <a href="https://github.com/patriarchpam" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="project-link-btn project-link-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div></p>
+            </div>
+          </div>
+
+          <div class="project-card glass-card reveal-up" data-category="software">
+            <div class="project-img-wrap">
+              <img src="images/password-generator.png" alt="Password Generator" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-preview-btn" onclick="openModal('images/password-generator.png', 'Password Generator', 'A Java-based password generator with customizable options.', ['Java'])">
+                  <i class="fa-solid fa-eye"></i> Preview
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">Java</span>
+              </div>
+              <h3>Password Generator</h3>
+              <p>A Java-based password generator with customizable options.</p>
+              <div class="project-links">
+                <a href="https://github.com/patriarchpam" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-brands fa-github"></i> Code</a>
+              </div></p>
+            </div>
+          </div>
+
+          <div class="project-card glass-card reveal-up" data-category="software">
+            <div class="project-img-wrap">
+              <img src="images/quiz.png" alt="Quiz Game" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-preview-btn" onclick="openModal('images/quiz.png', 'Quiz Game', 'A JavaFX-based quiz game with multiple question categories.', ['Java', 'JavaFX'])">
+                  <i class="fa-solid fa-eye"></i> Preview
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">Java</span><span class="tag">JavaFX</span>
+              </div>
+              <h3>Quiz Game</h3>
+              <p>A JavaFX-based quiz game with multiple question categories.</p>
+              <div class="project-links">
+                <a href="https://github.com/patriarchpam" target="_blank" rel="noopener noreferrer" class="project-link-btn"><i class="fa-brands fa-github"></i> Code</a>
+              </div></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">What I Know</span>
+          <h2 class="section-title">My <span class="text-gradient">Skills</span></h2>
+          <p class="section-desc">Technologies, frameworks, and AI tools I work with daily.</p>
+        </div>
+
+        <div class="skills-categories">
+
+          <!-- Frontend -->
+          <div class="skill-category reveal-up">
+            <h3 class="skill-cat-title"><i class="fa-solid fa-globe"></i> Frontend</h3>
+            <div class="skill-badges">
+              <div class="skill-badge"><img src="images/html.png" alt="HTML5"> HTML5</div>
+              <div class="skill-badge"><img src="images/css.png" alt="CSS3"> CSS3</div>
+              <div class="skill-badge"><img src="images/javascript.png" alt="JavaScript"> JavaScript</div>
+              <div class="skill-badge"><img src="images/react.png" alt="React"> React</div>
+              <div class="skill-badge"><img src="images/image.png" alt="TypeScript"> TypeScript</div>
+            </div>
+          </div>
+
+          <!-- Mobile & Backend -->
+          <div class="skill-category reveal-up">
+            <h3 class="skill-cat-title"><i class="fa-solid fa-server"></i> Backend &amp; Frameworks</h3>
+            <div class="skill-badges">
+              <div class="skill-badge">
+                <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+                  <circle cx="16" cy="16" r="16" fill="#6DB33F"/>
+                  <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">SB</text>
+                </svg>
+                Spring Boot
+              </div>
+              <div class="skill-badge"><img src="images/flutter.png" alt="Flutter"> Flutter (Dart)</div>
+              <div class="skill-badge">
+                <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+                  <circle cx="16" cy="16" r="16" fill="#3ECF8E"/>
+                  <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="black" font-size="8" font-weight="bold" font-family="Arial">Supa</text>
+                </svg>
+                Supabase
+              </div>
+              <div class="skill-badge">
+                <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+                  <circle cx="16" cy="16" r="16" fill="#00758F"/>
+                  <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">MySQL</text>
+                </svg>
+                MySQL
+              </div>
+              <div class="skill-badge"><img src="images/strapi.png" alt="Strapi"> Strapi</div>
+              <div class="skill-badge">
+                <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+                  <circle cx="16" cy="16" r="16" fill="#3178c6"/>
+                  <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="9" font-weight="bold" font-family="Arial">REST</text>
+                </svg>
+                REST APIs
+              </div>
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div class="skill-category reveal-up">
+            <h3 class="skill-cat-title"><i class="fa-solid fa-code"></i> Languages</h3>
+            <div class="skill-badges">
+              <div class="skill-badge"><img src="images/java.png" alt="Java"> Java</div>
+              <div class="skill-badge"><img src="images/python.jpg" alt="Python"> Python</div>
+              <div class="skill-badge"><img src="images/csharp.jpg" alt="C#"> C#</div>
+              <div class="skill-badge"><img src="images/download.jpg" alt="C++"> C++</div>
+            </div>
+          </div>
+
+          <!-- AI Tools -->
+          <div class="skill-category reveal-up skill-category-ai">
+            <h3 class="skill-cat-title"><i class="fa-solid fa-robot"></i> AI &amp; Dev Tools</h3>
+            <div class="skill-badges">
+              <!-- Antigravity -->
+              <div class="skill-badge skill-badge-ai">
+                <span class="ai-icon ai-icon-antigravity">AG</span>
+                Antigravity
+              </div>
+              <!-- Google Gemini -->
+              <div class="skill-badge skill-badge-ai">
+                <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+                  <defs><linearGradient id="gem-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4285F4"/><stop offset="100%" stop-color="#0F9D58"/></linearGradient></defs>
+                  <path d="M14 2C14 2 8 8 8 14C8 20 14 26 14 26C14 26 20 20 20 14C20 8 14 2 14 2Z" fill="url(#gem-g)"/>
+                  <path d="M2 14C2 14 8 8 14 8C20 8 26 14 26 14C26 14 20 20 14 20C8 20 2 14 2 14Z" fill="url(#gem-g)" opacity="0.7"/>
+                </svg>
+                Gemini
+              </div>
+              <!-- Claude -->
+              <div class="skill-badge skill-badge-ai">
+                <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+                  <circle cx="14" cy="14" r="13" fill="#D4A27F"/>
+                  <text x="50%" y="57%" dominant-baseline="middle" text-anchor="middle" fill="#1a1a1a" font-size="9" font-weight="bold" font-family="Georgia,serif">Cl</text>
+                </svg>
+                Claude
+              </div>
+              <!-- ChatGPT -->
+              <div class="skill-badge skill-badge-ai">
+                <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+                  <circle cx="14" cy="14" r="13" fill="#10a37f"/>
+                  <text x="50%" y="57%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">GPT</text>
+                </svg>
+                ChatGPT
+              </div>
+              <!-- GitHub Copilot -->
+              <div class="skill-badge skill-badge-ai">
+                <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+                  <circle cx="14" cy="14" r="13" fill="#1a1a2e"/>
+                  <text x="50%" y="57%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">✈ Co</text>
+                </svg>
+                Copilot
+              </div>
+              <!-- Cursor -->
+              <div class="skill-badge skill-badge-ai">
+                <span class="ai-icon" style="background:linear-gradient(135deg,#000,#333);color:#fff;font-size:0.6rem;font-weight:700">&#9646;</span>
+                Cursor
+              </div>
+            </div>
+          </div>
+
+          <!-- Design & Tools -->
+          <div class="skill-category reveal-up">
+            <h3 class="skill-cat-title"><i class="fa-solid fa-toolbox"></i> Tools &amp; Design</h3>
+            <div class="skill-badges">
+              <div class="skill-badge"><img src="images/github.png" alt="GitHub"> GitHub</div>
+              <div class="skill-badge"><img src="images/figma.jpg" alt="Figma"> Figma</div>
+              <div class="skill-badge">
+                <svg width="20" height="20" viewBox="0 0 28 28" style="flex-shrink:0">
+                  <circle cx="14" cy="14" r="13" fill="#007ACC"/>
+                  <text x="50%" y="57%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="7.5" font-weight="bold" font-family="Arial">VS</text>
+                </svg>
+                VS Code
+              </div>
+              <div class="skill-badge">
+                <svg width="20" height="20" viewBox="0 0 28 28" style="flex-shrink:0">
+                  <circle cx="14" cy="14" r="13" fill="#F05032"/>
+                  <text x="50%" y="57%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="7.5" font-weight="bold" font-family="Arial">Git</text>
+                </svg>
+                Git
+              </div>
+              <div class="skill-badge">
+                <svg width="20" height="20" viewBox="0 0 28 28" style="flex-shrink:0">
+                  <circle cx="14" cy="14" r="13" fill="#FF6C37"/>
+                  <text x="50%" y="57%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="6.5" font-weight="bold" font-family="Arial">POST</text>
+                </svg>
+                Postman
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROFILES ===== -->
+    <section id="github" class="section github-section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">Find Me Online</span>
+          <h2 class="section-title">My <span class="text-gradient">Online Profiles</span></h2>
+          <p class="section-desc">Connect with me across GitHub and LinkedIn — two GitHub accounts for personal and professional work.</p>
+        </div>
+
+        <div class="github-cards profiles-grid">
+
+          <!-- LinkedIn Profile Card -->
+          <div class="github-card linkedin-profile-card glass-card reveal-up" id="li-card">
+            <div class="li-card-banner"></div>
+            <div class="gh-card-header li-card-header">
+              <div class="gh-avatar-wrap li-avatar-wrap">
+                <img src="images/dito shot.jpg" alt="Patriarch Pam LinkedIn" class="gh-avatar li-avatar">
+                <div class="li-verified-badge"><i class="fa-brands fa-linkedin"></i></div>
+              </div>
+              <div class="gh-header-info">
+                <span class="gh-type-badge" style="color:#0ea5e9;background:rgba(14,165,233,0.15);border-color:rgba(14,165,233,0.3)">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </span>
+                <h3 class="gh-username">Patriarch Pam</h3>
+                <p class="gh-bio li-headline">Software Engineering Student · Frontend Developer</p>
+              </div>
+            </div>
+            <div class="li-info-row">
+              <div class="li-info-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Veritas University, Abuja</span>
+              </div>
+              <div class="li-info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Abuja, Nigeria</span>
+              </div>
+              <div class="li-info-item">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Frontend Developer @ nHub (2022–2024)</span>
+              </div>
+            </div>
+            <div class="gh-langs">
+              <span class="gh-lang-tag" style="--lang-color:#0077b5">React</span>
+              <span class="gh-lang-tag" style="--lang-color:#0ea5e9">TypeScript</span>
+              <span class="gh-lang-tag" style="--lang-color:#00b4ab">Flutter</span>
+              <span class="gh-lang-tag" style="--lang-color:#7c3aed">UI/UX</span>
+            </div>
+            <a href="https://www.linkedin.com/in/patriarch-pam-63411227a/" target="_blank" rel="noopener noreferrer"
+               class="btn li-connect-btn">
+              <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+            </a>
+          </div>
+
+          <!-- GitHub Account 1 -->
+          <div class="github-card glass-card reveal-left" id="gh-card-1">
+            <div class="gh-card-header">
+              <div class="gh-avatar-wrap">
+                <img src="https://github.com/patriarchpam.png" alt="Personal GitHub" class="gh-avatar" id="gh1-avatar" onerror="this.src='images/github.png'">
+                <div class="gh-online-dot"></div>
+              </div>
+              <div class="gh-header-info">
+                <span class="gh-type-badge personal"><i class="fa-solid fa-user"></i> Personal</span>
+                <h3 class="gh-username" id="gh1-name">@patriarchpam</h3>
+                <p class="gh-bio">Personal projects, experiments & learning</p>
+              </div>
+            </div>
+            <div class="gh-stats">
+              <div class="gh-stat">
+                <i class="fa-solid fa-code-branch"></i>
+                <span class="gh-stat-val">—</span>
+                <span class="gh-stat-lbl">Repos</span>
+              </div>
+              <div class="gh-stat">
+                <i class="fa-regular fa-star"></i>
+                <span class="gh-stat-val">—</span>
+                <span class="gh-stat-lbl">Stars</span>
+              </div>
+              <div class="gh-stat">
+                <i class="fa-solid fa-users"></i>
+                <span class="gh-stat-val">—</span>
+                <span class="gh-stat-lbl">Followers</span>
+              </div>
+            </div>
+            <div class="gh-langs">
+              <span class="gh-lang-tag" style="--lang-color:#f7df1e">JavaScript</span>
+              <span class="gh-lang-tag" style="--lang-color:#3178c6">TypeScript</span>
+              <span class="gh-lang-tag" style="--lang-color:#b07219">Java</span>
+            </div>
+            <a href="https://github.com/patriarchpam" target="_blank" rel="noopener noreferrer" class="btn btn-primary gh-btn" id="gh1-link">
+              <i class="fa-brands fa-github"></i> View Profile
+            </a>
+          </div>
+
+          <!-- GitHub Account 2 -->
+          <div class="github-card glass-card reveal-right" id="gh-card-2">
+            <div class="gh-card-header">
+              <div class="gh-avatar-wrap">
+                <img src="https://github.com/patriarchpamyeipyeng.png" alt="Work GitHub" class="gh-avatar" id="gh2-avatar" onerror="this.src='images/github.png'">
+                <div class="gh-online-dot"></div>
+              </div>
+              <div class="gh-header-info">
+                <span class="gh-type-badge work"><i class="fa-solid fa-briefcase"></i> Professional</span>
+                <h3 class="gh-username" id="gh2-name">@patriarchpamyeipyeng</h3>
+                <p class="gh-bio">Work projects, client code & collaborations</p>
+              </div>
+            </div>
+            <div class="gh-stats">
+              <div class="gh-stat">
+                <i class="fa-solid fa-code-branch"></i>
+                <span class="gh-stat-val">—</span>
+                <span class="gh-stat-lbl">Repos</span>
+              </div>
+              <div class="gh-stat">
+                <i class="fa-regular fa-star"></i>
+                <span class="gh-stat-val">—</span>
+                <span class="gh-stat-lbl">Stars</span>
+              </div>
+              <div class="gh-stat">
+                <i class="fa-solid fa-users"></i>
+                <span class="gh-stat-val">—</span>
+                <span class="gh-stat-lbl">Followers</span>
+              </div>
+            </div>
+            <div class="gh-langs">
+              <span class="gh-lang-tag" style="--lang-color:#3572A5">Python</span>
+              <span class="gh-lang-tag" style="--lang-color:#00b4ab">Dart</span>
+              <span class="gh-lang-tag" style="--lang-color:#e34c26">HTML</span>
+            </div>
+            <a href="https://github.com/patriarchpamyeipyeng" target="_blank" rel="noopener noreferrer" class="btn btn-primary gh-btn" id="gh2-link">
+              <i class="fa-brands fa-github"></i> View Profile
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Bottom note -->
+        <div class="gh-contrib-note reveal-up">
+          <i class="fa-solid fa-globe"></i>
+          <p>Find me across <strong>LinkedIn</strong> for professional networking and <strong>GitHub</strong> for code — personal experiments and professional collaborations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">Endorsements</span>
+          <h2 class="section-title">Client &amp; Peer <span class="text-gradient">Testimonials</span></h2>
+          <p class="section-desc">What collaborators and project leads have to say about working with me.</p>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <div class="testimonial-card glass-card reveal-up">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"Pam is an exceptionally dedicated frontend developer. During her time at nHub, she consistently delivered clean, performant React and Bootstrap components ahead of deadline."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fa-solid fa-user-tie"></i></div>
+              <div class="author-info">
+                <h4>Engineering Lead</h4>
+                <p>nHub Foundation</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card glass-card reveal-up">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"Working with Pam on our mobile app UI was a breeze. Her Flutter designs and eye for user experience brought TruckView from concept to life seamlessly."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fa-solid fa-truck-fast"></i></div>
+              <div class="author-info">
+                <h4>Product Lead</h4>
+                <p>TruckView MVP Project</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card glass-card reveal-up">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"Pam's technical versatility across Spring Boot, React, and Supabase makes her a strong software engineer who builds full-stack solutions with great attention to detail."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="author-info">
+                <h4>Peer / Collaborator</h4>
+                <p>Veritas University Software Team</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">Say Hello</span>
+          <h2 class="section-title">Get in <span class="text-gradient">Touch</span></h2>
+          <p class="section-desc">Have a project in mind or just want to chat? My inbox is always open.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Left: Info -->
+          <div class="contact-info-col reveal-left">
+            <h3>Let's work together</h3>
+            <p>I'm currently open to freelance work and interesting collaborations. Whether you have a question or just want to say hi, reach out!</p>
+
+            <div class="contact-links">
+              <a href="mailto:patriachpam@gmail.com" class="contact-link-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <span class="contact-link-label">Email</span>
+                  <span class="contact-link-val">patriachpam@gmail.com</span>
+                </div>
+              </a>
+              <a href="tel:+2348035379082" class="contact-link-item">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <span class="contact-link-label">Phone</span>
+                  <span class="contact-link-val">+234-803-537-9082</span>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/patriarch_01" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+                <div>
+                  <span class="contact-link-label">Instagram</span>
+                  <span class="contact-link-val">@patriarch_01</span>
+                </div>
+              </a>
+              <a href="https://x.com/PamPatriarch" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-icon"><i class="fa-brands fa-x-twitter"></i></div>
+                <div>
+                  <span class="contact-link-label">X (Twitter)</span>
+                  <span class="contact-link-val">@PamPatriarch</span>
+                </div>
+              </a>
+              <a href="https://wa.me/2348035379082?text=Hello%20I%20checked%20your%20portfolio%20and%20would%20like%20to%20chat" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-icon whatsapp-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div>
+                  <span class="contact-link-label">WhatsApp</span>
+                  <span class="contact-link-val">+234-803-537-9082</span>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/patriarch-pam-63411227a/" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-icon linkedin-icon"><i class="fa-brands fa-linkedin"></i></div>
+                <div>
+                  <span class="contact-link-label">LinkedIn</span>
+                  <span class="contact-link-val">Patriarch Pam</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="contact-form-col reveal-right">
+            <form id="contact-form" class="contact-form glass-card">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone / WhatsApp</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900" autocomplete="tel">
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Collaboration">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell me about your project..." required rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span id="btn-text">Send Message</span>
+              </button>
+              <!-- Notify via WhatsApp SMS after sending -->
+              <p class="form-note">📧 You'll get an email reply + a WhatsApp notification is sent to me instantly.</p>
+              <div id="form-status" class="form-status"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="#home" class="footer-logo">
+          <span class="logo-p">P</span>atriarch<span class="logo-dot">.</span><span class="logo-dev">dev</span>
+        </a>
+        <p class="footer-tagline">Building the future, one line at a time.</p>
+        <div class="footer-socials">
+          <a href="mailto:patriachpam@gmail.com" aria-label="Email" class="footer-social-btn"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://github.com/patriarchpam" target="_blank" rel="noopener noreferrer" aria-label="GitHub Personal" class="footer-social-btn"><i class="fa-brands fa-github"></i></a>
+          <a href="https://github.com/patriarchpamyeipyeng" target="_blank" rel="noopener noreferrer" aria-label="GitHub Work" class="footer-social-btn"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/patriarch-pam-63411227a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-btn linkedin-footer-btn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/patriarch_01" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-btn"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/PamPatriarch" target="_blank" rel="noopener noreferrer" aria-label="X Twitter" class="footer-social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://wa.me/2348035379082" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="footer-social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#github">GitHub</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Pam Patriarch. All rights reserved.</p>
+        <p>Crafted with <span class="heart">♥</span> in Abuja, Nigeria</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/2348035379082?text=Hello%20I%20checked%20your%20portfolio%20and%20would%20like%20to%20chat"
+     class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- ===== PROJECT MODAL ===== -->
+  <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" onclick="closeModal()"></div>
+    <div class="modal-content glass-card">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
